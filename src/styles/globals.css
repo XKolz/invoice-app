@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-bg-color: #f8f8fb;
+	--secondary-bg-color: #ffffff;
+	--small-text-color: black;
+	--text-color: black;
+	--input-label-color: #7388c3;
+	--input-color: black;
+}
+
+.dark {
+	--primary-bg-color: #141625;
+	--secondary-bg-color: #1e2139;
+	--small-text-color: #edf8fb;
+	--input-label-color: #dfe3fa;
+	--input-color: white;
+	--text-color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+.remove-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	font-family: "League Spartan", sans-serif;
+}
